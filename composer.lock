@@ -820,12 +820,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/gerfigna/ReusableBundle.git",
-                "reference": "2b491408490de676b70a0d60d60797a4b628b3f6"
+                "reference": "86594068df630b4a0dd3cb93fca2789521d5f85d"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gerfigna/ReusableBundle/zipball/2b491408490de676b70a0d60d60797a4b628b3f6",
-                "reference": "2b491408490de676b70a0d60d60797a4b628b3f6",
+                "url": "https://api.github.com/repos/gerfigna/ReusableBundle/zipball/86594068df630b4a0dd3cb93fca2789521d5f85d",
+                "reference": "86594068df630b4a0dd3cb93fca2789521d5f85d",
                 "shasum": ""
             },
             "require": {
@@ -849,7 +849,7 @@
             "keywords": [
                 "demo bundle"
             ],
-            "time": "2016-08-08 10:59:53"
+            "time": "2016-08-09 09:05:32"
         },
         {
             "name": "incenteev/composer-parameter-handler",
