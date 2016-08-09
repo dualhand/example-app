@@ -16,3 +16,8 @@
 /web/bundles/
 .DS_Store
 .php_cs.cache
+.idea/
+.vagrant/
+Capfile
+Vagrantfile
+web/app_dev.php
