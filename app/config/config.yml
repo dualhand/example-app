@@ -72,11 +72,13 @@ knp_doctrine_behaviors:
 
 easy_admin:
     entities:
-        - AppBundle\Entity\Product
         - AppBundle\Entity\Ticket
+        - AppBundle\Entity\Album
+        - AppBundle\Entity\Song
 
 acme_reusable:
     class:
-      product: AppBundle\Entity\Product
       purchasable_mapping:
         ticket: { key: TICKET, class: AppBundle\Entity\Ticket }
+        album: { key: ALBUM, class: AppBundle\Entity\Album }
+        song: { key: SONG, class: AppBundle\Entity\Song }

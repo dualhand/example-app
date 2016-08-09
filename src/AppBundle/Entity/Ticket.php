@@ -3,7 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Acme\ReusableBundle\Entity\Abstracts\AbstractPurchasable;
+use Acme\ReusableBundle\Entity\AbstractPurchasable;
 use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
@@ -22,16 +22,6 @@ class Ticket extends AbstractPurchasable
      * @ORM\Column(type="date")
      */
     protected $date;
-
-    /**
-     * Get id.
-     *
-     * @return int
-     */
-    public function getId()
-    {
-        return $this->id;
-    }
 
     /**
      * @return mixed
