@@ -10,6 +10,8 @@ parameters:
     # You should uncomment this if you want use pdo_sqlite
     # database_path: "%kernel.root_dir%/data.db3"
 
+    locale: en
+
     mailer_transport:  smtp
     mailer_host:       127.0.0.1
     mailer_user:       ~
@@ -17,3 +19,8 @@ parameters:
 
     # A secret key that's used to generate certain security-related tokens
     secret:            ThisTokenIsNotSoSecretChangeIt
+
+    # Vagrant parameters
+    domain: exampleapp.local
+    vm_port: 4584
+    vm_ip: 192.168.33.84

@@ -10,7 +10,7 @@ parameters:
 
 framework:
     #esi:             ~
-    #translator:      { fallbacks: ["%locale%"] }
+    translator:      { fallbacks: ["%locale%"] }
     secret:          "%secret%"
     router:
         resource: "%kernel.root_dir%/config/routing.yml"
@@ -27,7 +27,7 @@ framework:
     session:
         # http://symfony.com/doc/current/reference/configuration/framework.html#handler-id
         handler_id:  session.handler.native_file
-        save_path:   "%kernel.root_dir%/../var/sessions/%kernel.environment%"
+        save_path:   ~
     fragments:       ~
     http_method_override: true
     assets: ~
@@ -66,3 +66,17 @@ swiftmailer:
     username:  "%mailer_user%"
     password:  "%mailer_password%"
     spool:     { type: memory }
+
+knp_doctrine_behaviors:
+    sluggable:      true
+
+easy_admin:
+    entities:
+        - AppBundle\Entity\Product
+        - AppBundle\Entity\Ticket
+
+acme_reusable:
+    class:
+      product: AppBundle\Entity\Product
+      purchasable_mapping:
+        ticket: { key: TICKET, class: AppBundle\Entity\Ticket }
