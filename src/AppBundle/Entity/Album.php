@@ -4,6 +4,7 @@ namespace AppBundle\Entity;
 
 use Acme\ReusableBundle\Entity\AbstractPurchasable;
 use Doctrine\Common\Collections\ArrayCollection;
+use Doctrine\Common\Collections\Collection;
 use Doctrine\ORM\Mapping as ORM;
 use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
@@ -18,6 +19,8 @@ class Album extends AbstractPurchasable
     use ORMBehaviors\Sluggable\Sluggable;
 
     /**
+     * @var Collection
+     *
      * @ORM\OneToMany(targetEntity="Song", mappedBy="album")
      */
     protected $songs;
@@ -39,7 +42,10 @@ class Album extends AbstractPurchasable
      */
     public function addSong(Song $song)
     {
-        $this->songs[] = $song;
+        if (!$this->songs->contains($song)) {
+            $song->setAlbum($this);
+            $this->songs[] = $song;
+        }
 
         return $this;
     }
@@ -57,7 +63,7 @@ class Album extends AbstractPurchasable
     /**
      * Get songs.
      *
-     * @return \Doctrine\Common\Collections\Collection
+     * @return Collection
      */
     public function getSongs()
     {

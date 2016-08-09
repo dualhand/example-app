@@ -71,14 +71,26 @@ knp_doctrine_behaviors:
     sluggable:      true
 
 easy_admin:
+    site_name: 'ACME Megacorp.'
     entities:
-        - AppBundle\Entity\Ticket
-        - AppBundle\Entity\Album
-        - AppBundle\Entity\Song
+        Ticket:
+            class: AppBundle\Entity\Ticket
+        Album:
+            class: AppBundle\Entity\Album
+            form:
+                fields:
+                    - title
+                    - sku
+                    - price
+                    - slug
+                    - { property: 'songs', type_options: { by_reference: false} }
+
+        Song:
+           class: AppBundle\Entity\Song
 
 acme_reusable:
     class:
-      purchasable_mapping:
-        ticket: { key: TICKET, class: AppBundle\Entity\Ticket }
-        album: { key: ALBUM, class: AppBundle\Entity\Album }
-        song: { key: SONG, class: AppBundle\Entity\Song }
+        purchasable_mapping:
+            ticket: { key: TICKET, class: AppBundle\Entity\Ticket }
+            album: { key: ALBUM, class: AppBundle\Entity\Album }
+            song: { key: SONG, class: AppBundle\Entity\Song }
