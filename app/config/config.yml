@@ -90,6 +90,8 @@ easy_admin:
 
 acme_reusable:
     class:
+        cart: AppBundle\Entity\Cart
+        cart_line: AppBundle\Entity\CartLine
         purchasable_mapping:
             ticket: { key: TICKET, class: AppBundle\Entity\Ticket }
             album: { key: ALBUM, class: AppBundle\Entity\Album }
