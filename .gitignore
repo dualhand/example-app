@@ -21,3 +21,4 @@
 Capfile
 Vagrantfile
 web/app_dev.php
+data.db3
