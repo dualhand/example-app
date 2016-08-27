@@ -59,7 +59,7 @@ doctrine:
     orm:
         auto_generate_proxy_classes: "%kernel.debug%"
         naming_strategy: doctrine.orm.naming_strategy.underscore
-        auto_mapping: true
+        auto_mapping: false
 
 # Swiftmailer Configuration
 swiftmailer:
@@ -85,7 +85,7 @@ easy_admin:
                     - sku
                     - price
                     - slug
-                    - { property: 'songs', type_options: { by_reference: false} }
+                    - { property: 'songs', type_options: { by_reference: false } }
 
         Song:
            class: AppBundle\Entity\Song

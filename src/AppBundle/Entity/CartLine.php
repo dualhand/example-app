@@ -2,7 +2,7 @@
 
 namespace AppBundle\Entity;
 
-use Acme\ReusableBundle\Entity\AbstractCartLine;
+use Acme\ReusableBundle\Model\AbstractCartLine;
 use Doctrine\ORM\Mapping as ORM;
 
 /**

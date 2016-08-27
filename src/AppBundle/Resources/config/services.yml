@@ -1,0 +1,6 @@
+parameters:
+    app.album.class: 'AppBundle\Entity\Album'
+    app.song.class: 'AppBundle\Entity\Song'
+    app.ticket.class: 'AppBundle\Entity\Ticket'
+    app.cart.class: 'AppBundle\Entity\Cart'
+    app.cart_line.class: 'AppBundle\Entity\CartLine'
