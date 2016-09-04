@@ -3,6 +3,7 @@
 namespace AppBundle\Entity;
 
 use Acme\ReusableBundle\Model\AbstractPurchasable;
+use Acme\ReusableBundle\Traits\DeliverableTrait;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
@@ -13,6 +14,8 @@ use Doctrine\ORM\Mapping as ORM;
  */
 class Book extends AbstractPurchasable
 {
+    use DeliverableTrait;
+
     /**
      * @var string
      *
