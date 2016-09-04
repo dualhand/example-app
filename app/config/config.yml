@@ -69,23 +69,13 @@ swiftmailer:
     password:  "%mailer_password%"
     spool:     { type: memory }
 
-knp_doctrine_behaviors:
-    sluggable:      true
-
 easy_admin:
     site_name: 'ACME Megacorp.'
     entities:
         Ticket:
             class: AppBundle\Entity\Ticket
-        Album:
-            class: AppBundle\Entity\Album
-            form:
-                fields:
-                    - title
-                    - sku
-                    - price
-                    - slug
-                    - { property: 'songs', type_options: { by_reference: false } }
+        Book:
+            class: AppBundle\Entity\Book
 
         Song:
            class: AppBundle\Entity\Song
@@ -96,5 +86,5 @@ acme_reusable:
         cart_line: AppBundle\Entity\CartLine
         purchasable_mapping:
             ticket: { key: TICKET, class: AppBundle\Entity\Ticket }
-            album: { key: ALBUM, class: AppBundle\Entity\Album }
+            book: { key: BOOK, class: AppBundle\Entity\Book }
             song: { key: SONG, class: AppBundle\Entity\Song }

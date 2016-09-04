@@ -2,40 +2,40 @@
 
 namespace AppBundle\Entity;
 
-use Doctrine\ORM\Mapping as ORM;
 use Acme\ReusableBundle\Model\AbstractPurchasable;
+use Doctrine\ORM\Mapping as ORM;
 
 /**
- * Song.
+ * Book.
  *
- * @ORM\Table(name="app_song")
+ * @ORM\Table(name="app_book")
  * @ORM\Entity()
  */
-class Song extends AbstractPurchasable
+class Book extends AbstractPurchasable
 {
     /**
      * @var string
      *
      * @ORM\Column(type="string", length=100)
      */
-    protected $artist;
+    protected $author;
 
     /**
      * @return string
      */
-    public function getArtist()
+    public function getAuthor()
     {
-        return $this->artist;
+        return $this->author;
     }
 
     /**
-     * @param string $artist
+     * @param string $author
      *
      * @return Book
      */
-    public function setArtist($artist)
+    public function setAuthor($author)
     {
-        $this->artist = $artist;
+        $this->author = $author;
 
         return $this;
     }

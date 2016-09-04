@@ -1,5 +1,5 @@
 parameters:
-    app.album.class: 'AppBundle\Entity\Album'
+    app.book.class: 'AppBundle\Entity\Book'
     app.song.class: 'AppBundle\Entity\Song'
     app.ticket.class: 'AppBundle\Entity\Ticket'
     app.cart.class: 'AppBundle\Entity\Cart'

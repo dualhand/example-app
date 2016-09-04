@@ -4,7 +4,6 @@ namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
 use Acme\ReusableBundle\Model\AbstractPurchasable;
-use Knp\DoctrineBehaviors\Model as ORMBehaviors;
 
 /**
  * Ticket.
@@ -14,8 +13,6 @@ use Knp\DoctrineBehaviors\Model as ORMBehaviors;
  */
 class Ticket extends AbstractPurchasable
 {
-    use ORMBehaviors\Sluggable\Sluggable;
-
     /**
      * @var \DateTime
      *
@@ -43,11 +40,4 @@ class Ticket extends AbstractPurchasable
         return $this;
     }
 
-    /**
-     * @return array
-     */
-    public function getSluggableFields()
-    {
-        return array('title');
-    }
 }

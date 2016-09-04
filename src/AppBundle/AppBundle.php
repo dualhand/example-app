@@ -37,7 +37,7 @@ class AppBundle extends Bundle
             new DoctrineOrmMappingsPass(
                 $driver,
                 array(
-                    '%app.album.class%',
+                    '%app.book.class%',
                     '%app.ticket.class%',
                     '%app.song.class%',
                     '%app.cart.class%',
