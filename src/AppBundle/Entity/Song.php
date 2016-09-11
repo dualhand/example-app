@@ -3,7 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Acme\ReusableBundle\Model\AbstractPurchasable;
+use Acme\ReusableBundle\Entity\AbstractPurchasable;
 
 /**
  * Song.
@@ -31,7 +31,7 @@ class Song extends AbstractPurchasable
     /**
      * @param string $artist
      *
-     * @return Book
+     * @return Song
      */
     public function setArtist($artist)
     {

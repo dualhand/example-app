@@ -2,7 +2,7 @@
 
 namespace AppBundle\Entity;
 
-use Acme\ReusableBundle\Model\AbstractPurchasable;
+use Acme\ReusableBundle\Entity\AbstractPurchasable;
 use Acme\ReusableBundle\Traits\DeliverableTrait;
 use Doctrine\ORM\Mapping as ORM;
 
