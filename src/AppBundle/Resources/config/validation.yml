@@ -1,0 +1,29 @@
+AppBundle\Entity\Book:
+    properties:
+#    1 step
+#        price:
+#            - NotBlank: ~
+#    2 step
+#        author:
+#            - NotBlank: ~
+#    3 step
+#        title:
+#            - NotBlank:
+#                groups: [registration]
+#        sku:
+#            - NotBlank:
+#                groups: [registration]
+#        price:
+#            - NotBlank:
+#                groups: [registration]
+#        author:
+#            - NotBlank: ~
+
+# 4 step
+AppBundle\Entity\CartLine:
+    properties:
+        amount:
+#            - NotBlank: ~
+# 5 step
+            - NotBlank:
+                groups: [ CartLine, Defaults, Cart ]
