@@ -799,7 +799,7 @@
             "type": "symfony-bundle",
             "autoload": {
                 "psr-4": {
-                    "Acme\\ReusableBundle\\": ""
+                    "DualHand\\ReusableBundle\\": ""
                 }
             },
             "notification-url": "https://packagist.org/downloads/",

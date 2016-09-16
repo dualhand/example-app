@@ -17,7 +17,7 @@ class AppKernel extends Kernel
             new Sensio\Bundle\FrameworkExtraBundle\SensioFrameworkExtraBundle(),
 
             new JavierEguiluz\Bundle\EasyAdminBundle\EasyAdminBundle(),
-            new Acme\ReusableBundle\AcmeReusableBundle(),
+            new DualHand\ReusableBundle\DualHandReusableBundle(),
 
             new AppBundle\AppBundle(),
         ];

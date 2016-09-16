@@ -70,7 +70,7 @@ swiftmailer:
     spool:     { type: memory }
 
 easy_admin:
-    site_name: 'ACME Megacorp.'
+    site_name: 'DualHand Megacorp.'
     entities:
         Ticket:
             class: AppBundle\Entity\Ticket
@@ -79,7 +79,7 @@ easy_admin:
         Song:
            class: AppBundle\Entity\Song
 
-acme_reusable:
+dualHand_reusable:
     class:
         cart: AppBundle\Entity\Cart
         cart_line: AppBundle\Entity\CartLine

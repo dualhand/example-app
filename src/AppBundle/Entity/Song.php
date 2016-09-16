@@ -3,7 +3,7 @@
 namespace AppBundle\Entity;
 
 use Doctrine\ORM\Mapping as ORM;
-use Acme\ReusableBundle\Entity\AbstractPurchasable;
+use DualHand\ReusableBundle\Entity\AbstractPurchasable;
 
 /**
  * Song.

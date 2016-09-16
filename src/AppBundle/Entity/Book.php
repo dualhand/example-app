@@ -2,8 +2,8 @@
 
 namespace AppBundle\Entity;
 
-use Acme\ReusableBundle\Entity\AbstractPurchasable;
-use Acme\ReusableBundle\Traits\DeliverableTrait;
+use DualHand\ReusableBundle\Entity\AbstractPurchasable;
+use DualHand\ReusableBundle\Traits\DeliverableTrait;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
