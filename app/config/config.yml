@@ -79,7 +79,7 @@ easy_admin:
         Song:
            class: AppBundle\Entity\Song
 
-dualHand_reusable:
+dual_hand_reusable:
     class:
         cart: AppBundle\Entity\Cart
         cart_line: AppBundle\Entity\CartLine

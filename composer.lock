@@ -4,8 +4,8 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#composer-lock-the-lock-file",
         "This file is @generated automatically"
     ],
-    "hash": "dfa06fe2d3bd522e85cc3a6bf54a6ae8",
-    "content-hash": "d1311d071bb59655cd23825b18059bdb",
+    "hash": "6cb11918f7df0f9f16b74e913aa04c38",
+    "content-hash": "0e96b152a7061989a12facb5c438d3df",
     "packages": [
         {
             "name": "doctrine/annotations",
@@ -776,17 +776,17 @@
             "time": "2016-09-10 18:51:13"
         },
         {
-            "name": "gerfigna/reusable-bundle",
+            "name": "dualhand/reusable-bundle",
             "version": "dev-master",
             "source": {
                 "type": "git",
-                "url": "https://github.com/gerfigna/ReusableBundle.git",
-                "reference": "3e21af7f577e928ec79e4e2334f411fac30ed6aa"
+                "url": "https://github.com/DualHand/ReusableBundle.git",
+                "reference": "1b96c2ab74645e18688eae1804838d206fe9c897"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/gerfigna/ReusableBundle/zipball/3e21af7f577e928ec79e4e2334f411fac30ed6aa",
-                "reference": "3e21af7f577e928ec79e4e2334f411fac30ed6aa",
+                "url": "https://api.github.com/repos/DualHand/ReusableBundle/zipball/1b96c2ab74645e18688eae1804838d206fe9c897",
+                "reference": "1b96c2ab74645e18688eae1804838d206fe9c897",
                 "shasum": ""
             },
             "require": {
@@ -810,7 +810,7 @@
             "keywords": [
                 "demo bundle"
             ],
-            "time": "2016-09-11 06:22:09"
+            "time": "2016-09-16 14:48:44"
         },
         {
             "name": "incenteev/composer-parameter-handler",
@@ -1275,16 +1275,16 @@
         },
         {
             "name": "sensio/distribution-bundle",
-            "version": "v5.0.10",
+            "version": "v5.0.12",
             "source": {
                 "type": "git",
                 "url": "https://github.com/sensiolabs/SensioDistributionBundle.git",
-                "reference": "1fa16138b94c8f6faaccf79ff0aca595fc81d8fd"
+                "reference": "b6dcd04595e4db95ead22ddea58c397864e00c32"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/1fa16138b94c8f6faaccf79ff0aca595fc81d8fd",
-                "reference": "1fa16138b94c8f6faaccf79ff0aca595fc81d8fd",
+                "url": "https://api.github.com/repos/sensiolabs/SensioDistributionBundle/zipball/b6dcd04595e4db95ead22ddea58c397864e00c32",
+                "reference": "b6dcd04595e4db95ead22ddea58c397864e00c32",
                 "shasum": ""
             },
             "require": {
@@ -1323,7 +1323,7 @@
                 "configuration",
                 "distribution"
             ],
-            "time": "2016-09-10 19:25:53"
+            "time": "2016-09-14 20:25:12"
         },
         {
             "name": "sensio/framework-extra-bundle",
@@ -2363,7 +2363,7 @@
     "aliases": [],
     "minimum-stability": "stable",
     "stability-flags": {
-        "gerfigna/reusable-bundle": 20
+        "dualhand/reusable-bundle": 20
     },
     "prefer-stable": false,
     "prefer-lowest": false,
