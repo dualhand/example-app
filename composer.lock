@@ -781,12 +781,12 @@
             "source": {
                 "type": "git",
                 "url": "https://github.com/DualHand/ReusableBundle.git",
-                "reference": "1b96c2ab74645e18688eae1804838d206fe9c897"
+                "reference": "fa70f1587e63984adc8b21b6e5de584ccfee000e"
             },
             "dist": {
                 "type": "zip",
-                "url": "https://api.github.com/repos/DualHand/ReusableBundle/zipball/1b96c2ab74645e18688eae1804838d206fe9c897",
-                "reference": "1b96c2ab74645e18688eae1804838d206fe9c897",
+                "url": "https://api.github.com/repos/DualHand/ReusableBundle/zipball/fa70f1587e63984adc8b21b6e5de584ccfee000e",
+                "reference": "fa70f1587e63984adc8b21b6e5de584ccfee000e",
                 "shasum": ""
             },
             "require": {
@@ -810,7 +810,7 @@
             "keywords": [
                 "demo bundle"
             ],
-            "time": "2016-09-16 14:48:44"
+            "time": "2016-09-17 09:40:53"
         },
         {
             "name": "incenteev/composer-parameter-handler",
